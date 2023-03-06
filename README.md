@@ -17,12 +17,14 @@
 - TS.
 - Vite Starter.
 - Tailwind CSS.
+- Tanstack tables.
+- HeadlessUi.
 
 ## Rodando o Projeto
 
 - Usando o `Docker`.
 
-- va pasta /api-server rode o comando `./mvnw clean package` para buildar o backend, em seguida volte para raiz do projeto onde esta o arquivo `docker-compose.yml` e digite o comando `docker-compose up` para subir todas tecnologias juntas.
+- va para a pasta `/api-server` e rode o comando `./mvnw clean package` para buildar o back-end, em seguida volte para raiz do projeto onde esta o arquivo `docker-compose.yml` e digite o comando `docker-compose up` para subir todas tecnologias juntas.
 
 ## Doc APIs:
 
