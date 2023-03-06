@@ -1,0 +1,32 @@
+version: '3.1'
+
+services:
+  
+  frontend:
+    build: react-app
+    ports:
+      - 5173:5173
+    environment:
+      - REACT_APP_API_HOME=http://backend:8080
+    links:
+      - backend
+
+  backend:
+    build: api-server
+    ports:
+      - 8080:8080
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/${DB_NAME}?user=${DB_USER}&password=${DB_PASS}
+    links:
+      - db
+
+  db:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+    volumes:
+       - ./dump:/docker-entrypoint-initdb.d
