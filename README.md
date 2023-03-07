@@ -20,7 +20,22 @@
 - Tanstack tables.
 - HeadlessUi.
 
+
 ## Rodando o Projeto
+
+
+
+-Adicione o arquivo .env :
+
+Raiz: 
+
+`DB_NAME=`
+`DB_USER=`
+`DB_PASS= `
+
+- Adicione o arquivo .env.local
+
+`VITE_APP_DOMAIN=http://localhost:8080/`
 
 - Usando o `Docker`.
 
