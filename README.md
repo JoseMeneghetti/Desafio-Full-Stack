@@ -24,20 +24,20 @@
 ## Rodando o Projeto
 
 
-
--Adicione o arquivo .env :
-
-Raiz: 
+- Na Raiz: 
+Adicione o arquivo `.env`:
 
 `DB_NAME=`
 `DB_USER=`
 `DB_PASS= `
 
-- Adicione o arquivo .env.local
+Na pasta `react-app` : 
+
+Adicione o arquivo `.env.local`
 
 `VITE_APP_DOMAIN=http://localhost:8080/`
 
-- Usando o `Docker`.
+## Usando o `Docker`.
 
 - va para a pasta `/api-server` e rode o comando `./mvnw clean package` para buildar o back-end, em seguida volte para raiz do projeto onde esta o arquivo `docker-compose.yml` e digite o comando `docker-compose up` para subir todas tecnologias juntas.
 
