@@ -25,6 +25,7 @@
 
 
 Na Raiz: 
+
 Adicione o arquivo `.env`:
 
 `DB_NAME=`
