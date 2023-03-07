@@ -24,7 +24,7 @@
 ## Rodando o Projeto
 
 
-- Na Raiz: 
+Na Raiz: 
 Adicione o arquivo `.env`:
 
 `DB_NAME=`
