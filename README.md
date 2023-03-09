@@ -18,6 +18,7 @@
 - Vite Starter.
 - Tailwind CSS.
 - Tanstack tables.
+- React Router.
 - HeadlessUi.
 
 
